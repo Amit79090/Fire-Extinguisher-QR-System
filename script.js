@@ -2,6 +2,27 @@
 const params = new URLSearchParams(window.location.search);
 const extinguisherId = params.get("id");
 
+// If no ID is provided, show the search page
+if (!extinguisherId) {
+
+    document.getElementById("searchPage").style.display = "flex";
+    document.getElementById("card").style.display = "none";
+
+    document.getElementById("searchBtn").addEventListener("click", function () {
+
+        const id = document.getElementById("searchBox").value.trim();
+
+        if (id !== "") {
+            window.location.href = "?id=" + encodeURIComponent(id);
+        }
+
+    });
+
+} else {
+
+    document.getElementById("searchPage").style.display = "none";
+    document.getElementById("card").style.display = "block";
+
 // Load JSON file
 fetch("extinguishers.json")
     .then(response => {
