@@ -1,0 +1,622 @@
+[
+  {
+    "id": "FE-CHP-001",
+    "number": "74",
+    "location": "JNT-1",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-002",
+    "number": "75",
+    "location": "JNT-1",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-003",
+    "number": "68",
+    "location": "JNT-1",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-004",
+    "number": "76",
+    "location": "JNT-2",
+    "type": "DCP",
+    "capacity": "6 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-005",
+    "number": "77",
+    "location": "JNT-2",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-006",
+    "number": "69",
+    "location": "JNT-2",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-007",
+    "number": "78",
+    "location": "JNT-3",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-008",
+    "number": "79",
+    "location": "JNT-3",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-009",
+    "number": "70",
+    "location": "JNT-3",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-010",
+    "number": "80",
+    "location": "JNT-4",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-011",
+    "number": "81",
+    "location": "JNT-4",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-012",
+    "number": "71",
+    "location": "JNT-4",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-013",
+    "number": "82",
+    "location": "JNT-4A",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-014",
+    "number": "83",
+    "location": "JNT-4A",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-015",
+    "number": "72",
+    "location": "JNT-4A",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-016",
+    "number": "84",
+    "location": "JNT-5",
+    "type": "DCP",
+    "capacity": "6 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-017",
+    "number": "85",
+    "location": "JNT-5",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-018",
+    "number": "73",
+    "location": "JNT-5",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-019",
+    "number": "89",
+    "location": "JNT-6",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-020",
+    "number": "90",
+    "location": "JNT-6",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-021",
+    "number": "76",
+    "location": "JNT-6",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-022",
+    "number": "91",
+    "location": "JNT-7",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-023",
+    "number": "92",
+    "location": "JNT-7",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-024",
+    "number": "77",
+    "location": "JNT-7",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-025",
+    "number": "93",
+    "location": "JNT-8",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-026",
+    "number": "94",
+    "location": "JNT-8",
+    "type": "DCP",
+    "capacity": "9 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-027",
+    "number": "78",
+    "location": "JNT-8",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-028",
+    "number": "193",
+    "location": "JNT-8 TRAFO",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-029",
+    "number": "164",
+    "location": "COAL SAMPLING BUILDING NEAR JNT-8",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-030",
+    "number": "95",
+    "location": "CRUSHER HOUSE",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-031",
+    "number": "96",
+    "location": "CRUSHER HOUSE",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-032",
+    "number": "104",
+    "location": "CRUSHER HOUSE",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-033",
+    "number": "79",
+    "location": "CRUSHER HOUSE",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-034",
+    "number": "97",
+    "location": "COMPRESSOR ROOM",
+    "type": "DCP",
+    "capacity": "6 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-035",
+    "number": "98",
+    "location": "PUMP HOUSE",
+    "type": "DCP",
+    "capacity": "6kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-036",
+    "number": "81",
+    "location": "PUMP HOUSE",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-037",
+    "number": "90",
+    "location": "CRUSHER HOUSE",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-038",
+    "number": "101",
+    "location": "MR-1",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-039",
+    "number": "84",
+    "location": "MR-1",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-040",
+    "number": "100",
+    "location": "MR-2",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-041",
+    "number": "85",
+    "location": "MR-2",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-042",
+    "number": "128",
+    "location": "PDF-1",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-043",
+    "number": "256",
+    "location": "PDF-2",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-044",
+    "number": "257",
+    "location": "PDF-3",
+    "type": "C02",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-045",
+    "number": "258",
+    "location": "PDF-4",
+    "type": "C02",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-046",
+    "number": "104",
+    "location": "ER-1",
+    "type": "CO2",
+    "capacity": "22.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-047",
+    "number": "86",
+    "location": "ER-1",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-048",
+    "number": "87",
+    "location": "ER-1",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-049",
+    "number": "105",
+    "location": "ER-1 CONTROL ROOM",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-050",
+    "number": "192",
+    "location": "ER-1 TRAFO AREA",
+    "type": "C02",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-051",
+    "number": "148",
+    "location": "AAHAR -3",
+    "type": "DCP",
+    "capacity": "6 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-052",
+    "number": "178",
+    "location": "CHP CYCLE STAND",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-053",
+    "number": "209",
+    "location": "CHP CYCLE STAND",
+    "type": "C02",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-054",
+    "number": "106",
+    "location": "ER-2",
+    "type": "CO2",
+    "capacity": "6.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-055",
+    "number": "82",
+    "location": "ER-3",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-056",
+    "number": "83",
+    "location": "ER-3",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-057",
+    "number": "99",
+    "location": "ER-3",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-058",
+    "number": "88",
+    "location": "STACKER RECLAIMER",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-059",
+    "number": "89",
+    "location": "STACKER RECLAIMER",
+    "type": "CO2",
+    "capacity": "4.5 kg",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-060",
+    "number": "102",
+    "location": "STACKER RECLAIMER",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-061",
+    "number": "103",
+    "location": "STACKER RECLAIMER",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  },
+  {
+    "id": "FE-CHP-062",
+    "number": "177",
+    "location": "COAL SAMPLING POINT BED AREA",
+    "type": "DCP",
+    "capacity": "9 kg ",
+    "lastInspection": "June",
+    "nextInspection": "August",
+    "fireContact": "9204941009"
+  }
+]
