@@ -1,73 +1,41 @@
-// Get ID from URL
+// Get the ID from the URL
 const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
+const extinguisherId = params.get("id");
 
-// If no ID in URL
-if (!id) {
-
-    document.querySelector(".card").innerHTML = `
-        <div class="header">
-            <h1>🧯</h1>
-            <h2>Fire Extinguisher QR System</h2>
-            <p>Scan a Fire Extinguisher QR Code</p>
-        </div>
-
-        <div style="padding:30px;text-align:center;">
-            <h3>Welcome</h3>
-
-            <p>
-                Scan the QR Code attached to the fire extinguisher
-                to view its information.
-            </p>
-
-            <br>
-
-            <p><b>Example:</b></p>
-
-            <p>...?id=FE-CHP-001</p>
-
+// If no ID is provided
+if (!extinguisherId) {
+    document.body.innerHTML = `
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Poppins,sans-serif;">
+            <div style="background:white;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.2);">
+                <h2>🧯 Fire Extinguisher QR System</h2>
+                <p>Please scan a valid QR Code.</p>
+            </div>
         </div>
     `;
-
 } else {
 
-    // Load JSON
     fetch("extinguishers.json")
-
-        .then(response => {
-
-            if (!response.ok) {
-                throw new Error("Unable to load JSON.");
-            }
-
-            return response.json();
-
-        })
-
+        .then(response => response.json())
         .then(data => {
 
-            const ext = data.find(e => e.id === id);
+            const ext = data.find(item =>
+                item.id.trim().toUpperCase() === extinguisherId.trim().toUpperCase()
+            );
 
             if (!ext) {
 
-                document.querySelector(".card").innerHTML = `
-                    <div class="header">
-                        <h1>❌</h1>
-                        <h2>Fire Extinguisher Not Found</h2>
-                    </div>
-
-                    <div style="padding:30px;text-align:center;">
-                        <p>No extinguisher exists with ID:</p>
-
-                        <h3>${id}</h3>
+                document.body.innerHTML = `
+                    <div style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Poppins,sans-serif;">
+                        <div style="background:white;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.2);">
+                            <h2 style="color:red;">❌ Fire Extinguisher Not Found</h2>
+                            <p>Invalid QR Code.</p>
+                        </div>
                     </div>
                 `;
 
                 return;
-
             }
 
-            // Fill Data
             document.getElementById("number").textContent = ext.number;
             document.getElementById("id").textContent = ext.id;
             document.getElementById("location").textContent = ext.location;
@@ -88,17 +56,14 @@ if (!id) {
 
             console.error(error);
 
-            document.querySelector(".card").innerHTML = `
-                <div class="header">
-                    <h1>⚠️</h1>
-                    <h2>Error</h2>
-                </div>
-
-                <div style="padding:30px;text-align:center;">
-                    <p>Unable to load extinguisher data.</p>
+            document.body.innerHTML = `
+                <div style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Poppins,sans-serif;">
+                    <div style="background:white;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.2);">
+                        <h2 style="color:red;">⚠ Error</h2>
+                        <p>Unable to load extinguisher information.</p>
+                    </div>
                 </div>
             `;
-
         });
 
 }
