@@ -4,88 +4,101 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fire Extinguisher QR System</title>
+    <title>Fire Extinguisher Information</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-    <div class="card">
+    <!-- Header -->
 
-        <div class="header">
+    <div class="header">
 
-            <h1>🧯</h1>
+        <img src="mpl-logo.png" class="logo">
 
-            <h2>MAITHON POWER LIMITED</h2>
+        <h1>MAITHON POWER LIMITED</h1>
 
-            <p>Fire Extinguisher Information</p>
+        <p>Fire Extinguisher Information System</p>
 
+    </div>
+
+    <!-- Body -->
+
+    <div class="body">
+
+        <div class="row">
+            <span>🧯 Extinguisher No.</span>
+            <strong id="number"></strong>
         </div>
 
-        <table>
+        <div class="row">
+            <span>🆔 Extinguisher ID</span>
+            <strong id="id"></strong>
+        </div>
 
-            <tr>
-                <td><b>Extinguisher No.</b></td>
-                <td id="number"></td>
-            </tr>
+        <div class="row">
+            <span>📍 Location</span>
+            <strong id="location"></strong>
+        </div>
 
-            <tr>
-                <td><b>Extinguisher ID</b></td>
-                <td id="id"></td>
-            </tr>
+        <div class="row">
+            <span>🔥 Type</span>
+            <strong id="type"></strong>
+        </div>
 
-            <tr>
-                <td><b>Location</b></td>
-                <td id="location"></td>
-            </tr>
+        <div class="row">
+            <span>⚖ Capacity</span>
+            <strong id="capacity"></strong>
+        </div>
 
-            <tr>
-                <td><b>Type</b></td>
-                <td id="type"></td>
-            </tr>
+        <div class="row">
+            <span>📅 Last Inspection</span>
+            <strong id="lastInspection"></strong>
+        </div>
 
-            <tr>
-                <td><b>Capacity</b></td>
-                <td id="capacity"></td>
-            </tr>
+        <div class="row">
+            <span>📅 Next Inspection</span>
+            <strong id="nextInspection"></strong>
+        </div>
 
-            <tr>
-                <td><b>Last Inspection</b></td>
-                <td id="lastInspection"></td>
-            </tr>
+        <div class="row">
+            <span>☎ Fire Contact</span>
+            <strong id="fireContact"></strong>
+        </div>
 
-            <tr>
-                <td><b>Next Inspection</b></td>
-                <td id="nextInspection"></td>
-            </tr>
+    </div>
 
-            <tr>
-                <td><b>Fire Contact</b></td>
-                <td id="fireContact"></td>
-            </tr>
+    <!-- Button -->
 
-        </table>
+    <div class="button-area">
 
-        <br>
+        <a id="callButton" href="#">📞 Call Fire Team</a>
 
-        <a id="callButton" class="button">
+    </div>
 
-            📞 Call Fire Team
+    <!-- Footer -->
 
-        </a>
+    <div class="footer">
+
+        ✔ VERIFIED FIRE EQUIPMENT
+
+        <br><br>
+
+        Powered by Maithon Power Limited
 
     </div>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 
