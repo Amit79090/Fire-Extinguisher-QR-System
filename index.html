@@ -1,47 +1,131 @@
-<div class="body" id="content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    <div id="details">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="row">
-            <span>🧯 Extinguisher No.</span>
-            <strong id="number"></strong>
-        </div>
+    <title>Fire Extinguisher Information System</title>
 
-        <div class="row">
-            <span>🆔 Extinguisher ID</span>
-            <strong id="id"></strong>
-        </div>
+    <link rel="stylesheet" href="style.css">
 
-        <div class="row">
-            <span>📍 Location</span>
-            <strong id="location"></strong>
-        </div>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <div class="row">
-            <span>🔥 Type</span>
-            <strong id="type"></strong>
-        </div>
+</head>
 
-        <div class="row">
-            <span>⚖ Capacity</span>
-            <strong id="capacity"></strong>
-        </div>
+<body>
 
-        <div class="row">
-            <span>📅 Last Inspection</span>
-            <strong id="lastInspection"></strong>
-        </div>
+<div class="card">
 
-        <div class="row">
-            <span>📅 Next Inspection</span>
-            <strong id="nextInspection"></strong>
-        </div>
+    <!-- Header -->
 
-        <div class="row">
-            <span>☎ Fire Contact</span>
-            <strong id="fireContact"></strong>
+    <div class="header">
+
+        <img src="mpl-logo.png" class="logo" alt="MPL Logo">
+
+        <h1>MAITHON POWER LIMITED</h1>
+
+        <p>Fire Extinguisher Information System</p>
+
+    </div>
+
+    <!-- Home Page -->
+    <div id="homePage" style="display:none;">
+
+        <div style="padding:20px;">
+
+            <input
+                type="text"
+                id="searchBox"
+                placeholder="🔍 Search by ID, Location or Type..."
+                style="
+                    width:100%;
+                    padding:12px;
+                    border-radius:8px;
+                    border:1px solid #ccc;
+                    margin-bottom:20px;
+                    font-size:16px;
+                ">
+
+            <div id="extinguisherList"></div>
+
         </div>
 
     </div>
 
+    <!-- Detail Page -->
+
+    <div id="detailPage">
+
+        <div class="body">
+
+            <div class="row">
+                <span>🧯 Extinguisher No.</span>
+                <strong id="number"></strong>
+            </div>
+
+            <div class="row">
+                <span>🆔 Extinguisher ID</span>
+                <strong id="id"></strong>
+            </div>
+
+            <div class="row">
+                <span>📍 Location</span>
+                <strong id="location"></strong>
+            </div>
+
+            <div class="row">
+                <span>🔥 Type</span>
+                <strong id="type"></strong>
+            </div>
+
+            <div class="row">
+                <span>⚖ Capacity</span>
+                <strong id="capacity"></strong>
+            </div>
+
+            <div class="row">
+                <span>📅 Last Inspection</span>
+                <strong id="lastInspection"></strong>
+            </div>
+
+            <div class="row">
+                <span>📅 Next Inspection</span>
+                <strong id="nextInspection"></strong>
+            </div>
+
+            <div class="row">
+                <span>☎ Fire Contact</span>
+                <strong id="fireContact"></strong>
+            </div>
+
+        </div>
+
+        <div class="button-area">
+
+            <a id="callButton" href="#">
+                📞 Call Fire Team
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        ✔ VERIFIED FIRE EQUIPMENT
+
+        <br><br>
+
+        Powered by <strong>Maithon Power Limited</strong>
+
+    </div>
+
 </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
