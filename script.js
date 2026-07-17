@@ -1,120 +1,143 @@
-// Get the ID from the URL
+// Get ID from URL
 const params = new URLSearchParams(window.location.search);
 const extinguisherId = params.get("id");
 
-// Load extinguisher data
+// Load JSON
 fetch("extinguishers.json")
-    .then(response => response.json())
-    .then(data => {
+.then(response => response.json())
+.then(data => {
 
-        // ==========================
-        // HOME PAGE (NO ID)
-        // ==========================
-        if (!extinguisherId) {
+    // ===========================
+    // HOME PAGE
+    // ===========================
 
-            let html = `
-                <div style="max-width:900px;margin:30px auto;font-family:Poppins,sans-serif;padding:15px;">
-                    <h2 style="text-align:center;color:#d32f2f;">
-                        🧯 Fire Extinguisher List
-                    </h2>
+    if (!extinguisherId) {
 
-                    <p style="text-align:center;">
-                        Select an extinguisher to view complete details.
-                    </p>
-            `;
+        document.getElementById("homePage").style.display = "block";
+        document.getElementById("detailPage").style.display = "none";
 
-            data.forEach(ext => {
+        const list = document.getElementById("extinguisherList");
 
-                html += `
-                    <div style="
-                        background:#fff;
-                        border-radius:15px;
-                        padding:20px;
-                        margin-bottom:15px;
-                        box-shadow:0 4px 12px rgba(0,0,0,0.15);
-                    ">
+        function displayItems(items){
 
-                        <h3 style="margin:0;color:#d32f2f;">
-                            ${ext.id}
-                        </h3>
+            list.innerHTML = "";
 
-                        <p><strong>Extinguisher No:</strong> ${ext.number}</p>
+            items.forEach(ext => {
 
-                        <p><strong>Location:</strong> ${ext.location}</p>
+                list.innerHTML += `
+                <div class="ext-card">
 
-                        <p><strong>Type:</strong> ${ext.type}</p>
+                    <h3>${ext.id}</h3>
 
-                        <a href="?id=${ext.id}"
-                           style="
-                            display:inline-block;
-                            margin-top:10px;
-                            background:#d32f2f;
-                            color:white;
-                            text-decoration:none;
-                            padding:10px 18px;
-                            border-radius:8px;
-                            font-weight:bold;">
-                            View Details
-                        </a>
+                    <p><strong>No:</strong> ${ext.number}</p>
 
-                    </div>
+                    <p><strong>Location:</strong> ${ext.location}</p>
+
+                    <p><strong>Type:</strong> ${ext.type}</p>
+
+                    <a class="view-btn"
+                       href="?id=${ext.id}">
+                       View Details
+                    </a>
+
+                </div>
                 `;
+
             });
 
-            html += "</div>";
-
-            document.body.innerHTML = html;
-            return;
         }
 
-        // ==========================
-        // DETAIL PAGE
-        // ==========================
+        displayItems(data);
 
-        const ext = data.find(item =>
-            item.id.trim().toUpperCase() === extinguisherId.trim().toUpperCase()
-        );
+        document.getElementById("searchBox")
+        .addEventListener("input", function(){
 
-        if (!ext) {
+            const keyword =
+            this.value.toLowerCase();
 
-            document.body.innerHTML = `
-                <div style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Poppins,sans-serif;">
-                    <div style="background:white;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.2);">
-                        <h2 style="color:red;">❌ Fire Extinguisher Not Found</h2>
-                        <p>Invalid QR Code.</p>
-                    </div>
-                </div>
-            `;
+            const filtered =
+            data.filter(ext =>
 
-            return;
-        }
+                ext.id.toLowerCase().includes(keyword) ||
 
-        document.getElementById("number").textContent = ext.number;
-        document.getElementById("id").textContent = ext.id;
-        document.getElementById("location").textContent = ext.location;
-        document.getElementById("type").textContent = ext.type;
-        document.getElementById("capacity").textContent = ext.capacity;
-        document.getElementById("lastInspection").textContent = ext.lastInspection;
-        document.getElementById("nextInspection").textContent = ext.nextInspection;
+                ext.location.toLowerCase().includes(keyword) ||
 
-        document.getElementById("fireContact").innerHTML =
-            `<a href="tel:${ext.fireContact}">${ext.fireContact}</a>`;
+                ext.type.toLowerCase().includes(keyword) ||
 
-        document.getElementById("callButton").href =
-            `tel:${ext.fireContact}`;
+                ext.number.toLowerCase().includes(keyword)
 
-    })
-    .catch(error => {
+            );
 
-        console.error(error);
+            displayItems(filtered);
 
-        document.body.innerHTML = `
-            <div style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:Poppins,sans-serif;">
-                <div style="background:white;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.2);">
-                    <h2 style="color:red;">⚠ Error</h2>
-                    <p>Unable to load extinguisher information.</p>
-                </div>
-            </div>
+        });
+
+        return;
+
+    }
+
+    // ===========================
+    // DETAIL PAGE
+    // ===========================
+
+    document.getElementById("homePage").style.display = "none";
+    document.getElementById("detailPage").style.display = "block";
+
+    const ext = data.find(item =>
+        item.id.trim().toUpperCase() ===
+        extinguisherId.trim().toUpperCase()
+    );
+
+    if(!ext){
+
+        document.body.innerHTML=`
+        <div style="display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        font-family:Poppins;">
+
+        <div style="
+        background:#fff;
+        padding:40px;
+        border-radius:20px;
+        text-align:center;
+        box-shadow:0 10px 20px rgba(0,0,0,.2);">
+
+        <h2 style="color:red;">
+        ❌ Fire Extinguisher Not Found
+        </h2>
+
+        <p>Invalid QR Code.</p>
+
+        </div>
+
+        </div>
         `;
 
-    });
+        return;
+
+    }
+
+    document.getElementById("number").textContent = ext.number;
+    document.getElementById("id").textContent = ext.id;
+    document.getElementById("location").textContent = ext.location;
+    document.getElementById("type").textContent = ext.type;
+    document.getElementById("capacity").textContent = ext.capacity;
+    document.getElementById("lastInspection").textContent = ext.lastInspection;
+    document.getElementById("nextInspection").textContent = ext.nextInspection;
+
+    document.getElementById("fireContact").innerHTML =
+    `<a href="tel:${ext.fireContact}">${ext.fireContact}</a>`;
+
+    document.getElementById("callButton").href =
+    `tel:${ext.fireContact}`;
+
+})
+.catch(error => {
+
+    console.error(error);
+
+    alert("Unable to load extinguisher information.");
+
+});
